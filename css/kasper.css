@@ -868,4 +868,119 @@ header nav .form i{
     display: flex;
     justify-content: space-between;
 }
+@media(max-width:767px){
+    .contact .container .content{
+        flex-direction: column;
+    }
+}
+.contact .content form {
+    flex-basis: 70%;
+}
+.contact .content form .main-input {
+    padding: 20px;
+    display: block;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.contact .content form .main-input:focus {
+    outline: none;
+}
+.contact .content form textarea.main-input {
+    height: 200px;
+}
+.contact .content form input[type="submit"] {
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    display: flex;
+    margin-left: auto;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+@media(max-width:767px){
+    .contact .content form input[type="submit"] {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.contact .content .info {
+    flex-basis: 25%;
+}
+@media(max-width:767px){
+    .contact .content .info {
+        order: -1;
+        text-align: center;
+    }
+}
+.contact .content .info h4 {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.contact .content .info .phone{
+    display: block;
+    color:#777;
+    margin-bottom: 5px;
+}
+.contact .content .info h4:nth-of-type(2) {
+    margin-top: 80px;
+}
+@media(max-width:767px){
+    .contact .content .info h4:nth-of-type(2) {
+        margin-top: 40px;
+    }
+}
+.contact .content .info address{
+    color: #777;
+    line-height: 2;
+}
+@media(max-width:767px){
+    .contact .content .info address{
+        margin-bottom: 20px;
+    }
+}
 /* End Contact us */
+/* Start footer */
+.footer{
+    background-image: url(../images/landing.jpg);
+    text-align: center;
+    padding-top: calc( var(--section-padding) / 2);
+    padding-bottom: calc( var(--section-padding) / 2);
+    color: white;
+    position: relative;
+}
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.footer .container {
+    position: relative;
+}
+.footer p:not(.copy-rights){
+    margin-top: 20px;
+    text-transform: uppercase;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    font-size: 24px;
+    width: fit-content;
+    margin: 20px auto;
+}
+.footer .social-icons i{
+    padding: 10px 15px;
+}
+.footer .copy-rights {
+    margin-top: 40px;
+}
+.footer .copy-rights span {
+    color: var(--main-color);
+    font-weight: bold;
+}
+/* Start footer */
