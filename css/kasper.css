@@ -859,12 +859,13 @@ header nav .form i{
     }
 }
 /* End subscribe */
-
-
-
-
-
-
-
-
-
+/* Start Contact us */
+.contact{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.contact .container .content{
+    display: flex;
+    justify-content: space-between;
+}
+/* End Contact us */
